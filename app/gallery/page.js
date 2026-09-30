@@ -1,10 +1,42 @@
+import Image from "next/image";
+
 const galleryItems = [
-  { title: "Coding", icon: "💻", text: "Learning and building projects" },
-  { title: "Gaming", icon: "🎮", text: "One of my favorite hobbies" },
-  { title: "Ideas", icon: "💡", text: "Turning ideas into projects" },
-  { title: "Motorcycle", icon: "🏍️", text: "Enjoying the road" },
-  { title: "Study", icon: "📚", text: "Growing through practice" },
-  { title: "Future", icon: "🚀", text: "Working toward my goals" }
+  {
+    title: "Coding",
+    image: "/images/gallery-coding.jpg",
+    alt: "Code on a computer screen",
+    text: "Learning and building projects"
+  },
+  {
+    title: "Gaming",
+    image: "/images/gallery-gaming.jpg",
+    alt: "Gaming event with players and screens",
+    text: "One of my favorite hobbies"
+  },
+  {
+    title: "Ideas",
+    image: "/images/gallery-ideas.jpg",
+    alt: "Creative workspace for developing ideas",
+    text: "Turning ideas into projects"
+  },
+  {
+    title: "Motorcycle",
+    image: "/images/33e6890f-b60d-447d-958d-d700b87aee83.jpg",
+    alt: "Vince riding a motorcycle on a country road",
+    text: "Enjoying the road"
+  },
+  {
+    title: "Study",
+    image: "/images/gallery-study.jpg",
+    alt: "Notebook and materials for studying",
+    text: "Growing through practice"
+  },
+  {
+    title: "Future",
+    image: "/images/gallery-future.jpg",
+    alt: "Professionals collaborating on a project",
+    text: "Working toward my goals"
+  }
 ];
 
 export default function Gallery() {
@@ -22,8 +54,14 @@ export default function Gallery() {
       <div className="gallery-grid">
         {galleryItems.map((item, index) => (
           <article className={`gallery-card gallery-${index + 1}`} key={item.title}>
-            <div className="gallery-icon">{item.icon}</div>
-            <div>
+            <Image
+              src={item.image}
+              alt={item.alt}
+              fill
+              sizes="(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw"
+              className="gallery-photo"
+            />
+            <div className="gallery-content">
               <h2>{item.title}</h2>
               <p>{item.text}</p>
             </div>

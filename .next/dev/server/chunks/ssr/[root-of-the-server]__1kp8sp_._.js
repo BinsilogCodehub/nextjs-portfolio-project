@@ -13,36 +13,44 @@ __turbopack_context__.s([
     ()=>Gallery
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
+;
 ;
 const galleryItems = [
     {
         title: "Coding",
-        icon: "💻",
+        image: "/images/gallery-coding.jpg",
+        alt: "Code on a computer screen",
         text: "Learning and building projects"
     },
     {
         title: "Gaming",
-        icon: "🎮",
+        image: "/images/gallery-gaming.jpg",
+        alt: "Gaming event with players and screens",
         text: "One of my favorite hobbies"
     },
     {
         title: "Ideas",
-        icon: "💡",
+        image: "/images/gallery-ideas.jpg",
+        alt: "Creative workspace for developing ideas",
         text: "Turning ideas into projects"
     },
     {
         title: "Motorcycle",
-        icon: "🏍️",
+        image: "/images/33e6890f-b60d-447d-958d-d700b87aee83.jpg",
+        alt: "Vince riding a motorcycle on a country road",
         text: "Enjoying the road"
     },
     {
         title: "Study",
-        icon: "📚",
+        image: "/images/gallery-study.jpg",
+        alt: "Notebook and materials for studying",
         text: "Growing through practice"
     },
     {
         title: "Future",
-        icon: "🚀",
+        image: "/images/gallery-future.jpg",
+        alt: "Professionals collaborating on a project",
         text: "Working toward my goals"
     }
 ];
@@ -58,27 +66,27 @@ function Gallery() {
                         children: "MY GALLERY"
                     }, void 0, false, {
                         fileName: "[project]/app/gallery/page.js",
-                        lineNumber: 14,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         children: "Gallery"
                     }, void 0, false, {
                         fileName: "[project]/app/gallery/page.js",
-                        lineNumber: 15,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         children: "A visual collection of the things that represent my interests and student life."
                     }, void 0, false, {
                         fileName: "[project]/app/gallery/page.js",
-                        lineNumber: 16,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/gallery/page.js",
-                lineNumber: 13,
+                lineNumber: 45,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -86,34 +94,38 @@ function Gallery() {
                 children: galleryItems.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
                         className: `gallery-card gallery-${index + 1}`,
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "gallery-icon",
-                                children: item.icon
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                src: item.image,
+                                alt: item.alt,
+                                fill: true,
+                                sizes: "(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw",
+                                className: "gallery-photo"
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/page.js",
-                                lineNumber: 25,
+                                lineNumber: 57,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "gallery-content",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                         children: item.title
                                     }, void 0, false, {
                                         fileName: "[project]/app/gallery/page.js",
-                                        lineNumber: 27,
+                                        lineNumber: 65,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: item.text
                                     }, void 0, false, {
                                         fileName: "[project]/app/gallery/page.js",
-                                        lineNumber: 28,
+                                        lineNumber: 66,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/gallery/page.js",
-                                lineNumber: 26,
+                                lineNumber: 64,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -124,24 +136,24 @@ function Gallery() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/gallery/page.js",
-                                lineNumber: 30,
+                                lineNumber: 68,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, item.title, true, {
                         fileName: "[project]/app/gallery/page.js",
-                        lineNumber: 24,
+                        lineNumber: 56,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/gallery/page.js",
-                lineNumber: 22,
+                lineNumber: 54,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/gallery/page.js",
-        lineNumber: 12,
+        lineNumber: 44,
         columnNumber: 5
     }, this);
 }

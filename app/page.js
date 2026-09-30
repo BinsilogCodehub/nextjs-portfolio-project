@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -23,7 +24,13 @@ export default function Home() {
         </div>
 
         <div className="hero-card">
-          <div className="avatar">VM</div>
+          <Image
+            src="/images/fa013a7a-542d-4267-9d2d-67e07bd246c3.jpg"
+            alt="Vince"
+            width={150}
+            height={150}
+            className="avatar"
+          />
           <h2>BSIT Student</h2>
           <p>Learning • Creating • Improving</p>
         </div>
